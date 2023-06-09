@@ -1,7 +1,7 @@
 ---
-const { title } = Astro.props
-import "@fontsource-variable/josefin-sans"
-import Nav from "../components/Nav"
+const { title } = Astro.props;
+import "@fontsource-variable/josefin-sans";
+import Nav from "../components/Nav";
 ---
 
 <html lang="en">
@@ -13,6 +13,7 @@ import Nav from "../components/Nav"
       content="Digital Artist services, accessible for everyone."
     />
     <meta title={title} />
+    <title>GaleriArt</title>
   </head>
   <body class="">
     <Nav client:load />
@@ -20,7 +21,6 @@ import Nav from "../components/Nav"
 </html>
 <main>
   <slot />
-  <!-- your content is injected here -->
   <footer class="mt-12 bg-black px-8 py-12 md:px-16 lg:px-32">
     <div></div>
   </footer>
